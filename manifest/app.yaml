@@ -9,7 +9,7 @@ spec:
   ports:
   - port: 5004
     targetPort: 5004
-    nodePort: 32001
+  
 ---
 apiVersion: apps/v1
 kind: Deployment

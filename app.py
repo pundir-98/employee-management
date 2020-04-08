@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 
 
-
 app.add_url_rule('/read',view_func=crud.view, methods=['GET','POST'])
 app.add_url_rule('/create/<data>',view_func=crud.add_employee, methods=['POST'])
 app.add_url_rule('/update/<primary_key>/<data>',view_func=crud.update_employee, methods=['PUT','POST'])
