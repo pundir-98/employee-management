@@ -5,7 +5,9 @@ WORKDIR /
 COPY . /
 
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
-RUN pip3 install pymongo
+RUN pip3 install pymongo requests
+
+ENV host-0f-mongo2 mongodb://mongo-back-service2.default
 
 EXPOSE 5004
 
